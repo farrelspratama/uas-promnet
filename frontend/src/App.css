@@ -1,0 +1,170 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0F1035;
+  color: #DCF2F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Inventory Item Styles */
+.inventory-item h2 {
+  text-align: center;
+  color: #DCF2F1;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #7FC7D9;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 5px solid #dee2e6;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.table .table {
+  background-color: #fff;
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+/* Form Styles */
+.create-item-form {
+  display: flow-root;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.create-item-form form {
+  width: 100%;
+}
+
+/* Hover effect for button */
+.hover-effect {
+  transition: background-color 0.3s ease;
+}
+
+.create-item-form,
+.create-item-form:hover {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Form Element Styles */
+.create-item-form input,
+select,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.create-item-form button {
+  align-items: center;
+  background-color: #0F1035;
+  color: #fff;
+  border: none;
+  padding: 8px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-item-form {
+  display: flow-root;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.update-item-form form {
+  width: 100%;
+}
+
+.update-item-form input,
+select,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-item-form button {
+  align-items: center;
+  background-color: #0F1035;
+  color: #fff;
+  border: none;
+  padding: 8px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Tambahkan beberapa properti CSS untuk menyesuaikan modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Sesuaikan lebar modal sesuai kebutuhan */
+  max-width: 500px;
+  max-height: 80vh;
+}
+
+.modal-content {
+  width: 100%;
+}
